@@ -1,0 +1,153 @@
+#  ____    _                       _          _____
+# / ___|  (_)  _ __ ___    _ __   | |   ___  |_   _|  _ __     __ _
+# \___ \  | | | '_ ` _ \  | '_ \  | |  / _ \   | |   | '_ \   / _` |
+#  ___) | | | | | | | | | | |_) | | | |  __/   | |   | |_) | | (_| |
+# |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
+#                         |_|                        |_|
+
+# 占位符: %time% | %player% | %option%
+
+# !!!!!!!!!!!!!!!!
+# 此选项将支持所有使用传送功能的插件
+# 若希望插件记录其他插件的 /back 命令的传送位置 -> 设为 true
+enable-teleport-logging: false
+# !!!!!!!!!!!!!!!!
+
+# 设为 true 将禁用前缀
+# 修改后需重启服务器生效
+disable-prefix: false
+prefix: "&c[&6SimpleTpa&c]"
+
+# 消息配置:
+# 使用 HEX 颜色代码 - 示例: #2ecc71
+# Death-Message: "&6要传送至死亡 #2ecc71位置 请使用 &c/back"
+
+# 禁用消息 - 设为 NONE
+# 示例:
+# Console-Isnt-Player: "none"
+Console-Isnt-Player: "&6控制台无法使用 &cSimpleTpa&6！"
+Disabled-World-Message: "&6你无法在此世界使用 &cSimpleTpa&6！"
+Teleport-Message: "&6你将在 &c%time% &6秒后被传送！"
+Teleport-Message-TPAUTO: "&6你将在 &c%time% &6秒后被传送！请不要移动！"
+Teleport-Message-Back-To-Player: "&6你已&c接受&6传送请求！"
+Player-Is-Null: "&6该玩家不在&c线&6！"
+Player-Doesnt-Have-Back-Point: "&6该玩家没有可返回的位置！"
+Player-Doesnt-Have-Back-Point-1: "&6你没有可返回的位置！"
+Cooldown-Message: "&6该命令还需等待 %time% 秒才能使用！"
+Death-Message: "&6使用 &c/back &6传送至死亡位置"
+Teleport-Message-Back-To-Sender-TPHEREALL: "&6正在向&c所有人&6发送传送至此的请求！"
+No-Permission-Message: "&6你没有权限使用此命令！"
+TpaToggle-Deactivated-Player-2: "&c%player% &6禁用了传送到你处的功能！"
+TpaToggle-Activated-Player-2: "&c%player% &6启用了传送到你处的功能！"
+TpaToggle-Deactivated-Player: "&6你已对 &c%player% &6禁用传送功能。"
+TpaToggle-Activated-Player: "&6你已对 &c%player% &6启用传送功能。"
+TpaToggle-Deactivated: "&6你已禁用传送到你处的功能。"
+TpaToggle-Activated: "&6你已启用传送到你处的功能。"
+TpaToggled-Player-Message: "&6该玩家已禁用传送到他处的功能！"
+Player-Is-Player: "&6你不能传送至&c自己&6！"
+Player-Is-Player-tpignore: "&6你不能忽略&c自己&6！"
+Player-Is-Ignored: "&6已&c忽略&6该玩家的请求！"
+Player-Is-Already-Ignored: "&6已&c取消屏蔽&6该玩家！如需屏蔽请再次使用命令！"
+Already-A-TP-Request: "&6你已发送过传送请求！取消请使用 &c/tpcancel 玩家名"
+Tpa-Usage-Message: "&6用法：&c/tpa (玩家名)"
+TpaIgnore-Usage-Message: "&6用法：&c/tpaignore (玩家名)"
+Timed-Out-Message: "&6你的传送请求已&c超时&6！"
+Sending-Teleport-Request: "&6正在向 &c%player% &6发送传送请求。取消请使用 &c/tpcancel 玩家名"
+Accept-Message: "&6接受请求请输入 &c/tpaccept"
+Deny-Message: "&6拒绝请求请输入 &c/tpdeny"
+Sent-Request-On-You: "&c%player% &6向你发送了传送请求！"
+Timed-Out-Here-Message: "&6你的传送至此请求已&c超时&6！"
+Sending-Teleport-Here-Request: "&6正在向 &c%player% &6发送传送至此请求。取消请使用 &c/tpcancel 玩家名"
+Sent-Here-Request-On-You: "&c%player% &6希望你传送至他处！"
+Already-A-TPHere-Request: "&6你已发送过传送至此请求！取消请使用 &c/tpcancel 玩家名"
+Tpa-Here-Usage-Message: "&6用法：&c/tpahere (玩家名)"
+No-Teleport-Requests: "&6你没有待处理的传送请求！"
+Invalid-Player: "&6目标玩家已离开服务器！"
+Teleport-Message-Back-To-Sender: "&c%player% &6接受了你的传送请求。"
+Teleported-Message: "&6传送完成！"
+Teleported-Message-TpAuto: "&c%player% &6已传送至你处！你已启用自动接受功能！"
+Move-Cancel-Message: "&6你移动了，传送请求已取消！"
+Rejected-Sender: "&6对方已拒绝你的&c请求&6！"
+Rejected-Message: "&6你已拒绝该&c请求&6！"
+Player-Is-In-Disabled-World: "&6目标玩家位于&c禁用世界&6！"
+Tpcancel-Usage-Message: "&6用法：&c/tpcancel (玩家名)"
+Error-Cancelling-Request: "&6你不能取消自己的&c请求&6！"
+Request-Cancelled: "&6成功取消传送请求！"
+Death-Message-Coords: "&6你的死亡坐标：&c%coords%&6！"
+Time-Left: "&6你还有 &c%seconds% &6秒时间处理请求"
+Damaged-Cancel-Message: "&6你受到伤害，传送请求已取消！"
+Different-Gamemode: "&6观察者模式无法使用传送命令！"
+World-Doesnt-Exists-Or-Unloaded: "&6目标世界未加载或不存在！"
+Enabled-TpAuto: "&6现已&c自动接受&6所有/tpa请求！"
+Disabled-TpAuto: "&6现已&c关闭&6自动接受功能！"
+Player-Has-Ignored-You: "&6该玩家已&c屏蔽&6你的传送请求！"
+Player-Not-Same-World: "&6目标玩家与你不在同一世界！"
+
+## 按钮设置
+# 颜色列表: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+
+# 粒子与音效
+# 音效参数参考值
+# 音效名称列表: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+Sound-Name: "ENTITY_EXPERIENCE_ORB_PICKUP"
+sound-volume: 3.0
+sound-pitch: 0.533
+# 粒子名称列表: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+Particle-Name: "EXPLOSION_NORMAL"
+
+# 接受按钮属性
+Accept-Button: "ACCEPT"
+Accept-Button-Color: "RED"
+Accept-Button-Set-Bold: true
+Accept-Button-Description: "&6点击此处&c接受&6传送请求！"
+
+# 中间按钮属性
+Middle-Button: " | "
+Middle-Button-Color: "GRAY"
+Middle-Button-Set-Bold: true
+Middle-Button-Description: "&7 <- 选择操作 -> "
+
+# 拒绝按钮属性
+Deny-Button: "DENY"
+Deny-Button-Color: "RED"
+Deny-Button-Set-Bold: true
+Deny-Button-Description: "&6点击此处&c拒绝&6传送请求！"
+
+# 在下列列表中添加要禁用 SimpleTpa 的世界名
+disabled-worlds:
+  - 'disabledworld'
+
+# 设为 true 将禁用对应功能
+# B A C K    设 置
+disable-back-command: false
+disable-coords-message: false
+disable-back-on-death: false
+disable-back-on-tp: false
+
+# 功能开关
+disable-gamemode-check: false
+disable-accept-deny-buttons: false
+disable-particles: false
+disable-move-system: false
+disable-sound: false
+disable-interdimensional-travel: false
+disable-invincibility: false
+disable-back-on-quit: false
+
+# 时间单位均为秒
+# 数值设置
+invincibility-seconds: 5
+keep-alive: 60
+delay-back-command: 5
+delay-teleportation: 5
+
+# 冷却时间
+back-cooldown: 10
+tpa-cooldown: 10
+tpahere-cooldown: 10
+tpahereall-cooldown: 10
+
+# 自定义冷却时间权限格式: 
+# simpletpa.cooldown.命令类型.秒数 
+# 可用命令类型: tpa | tpahere | back | tpahereall
+# 示例: simpletpa.cooldown.tpa.300
