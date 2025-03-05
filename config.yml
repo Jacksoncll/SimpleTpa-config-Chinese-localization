@@ -120,35 +120,35 @@ Deny-Button-Description: "&6点击此处&c拒绝&6传送请求！"
 disabled-worlds:
   - 'disabledworld'
 
-# 设为 true 将禁用对应功能
-# B A C K    设 置
-disable-back-command: false
-disable-coords-message: false
-disable-back-on-death: false
-disable-back-on-tp: false
-
 # 功能开关
-disable-gamemode-check: false
-disable-accept-deny-buttons: false
-disable-particles: false
-disable-move-system: false
-disable-sound: false
-disable-interdimensional-travel: false
-disable-invincibility: false
-disable-back-on-quit: false
+# BACK设置
+disable-back-command: false          # 禁用 /back 命令（玩家无法使用返回功能）
+disable-coords-message: false        # 禁用死亡坐标提示消息（玩家死亡时不显示坐标）
+disable-back-on-death: false         # 禁用死亡位置记录（玩家死亡后无法用 /back 返回）
+disable-back-on-tp: false            # 禁用传送位置记录（传送后不会更新 /back 的位置）
+
+# 其他功能开关
+disable-gamemode-check: false        # 禁用游戏模式检查（如观察者模式也可传送）
+disable-accept-deny-buttons: false   # 禁用接受/拒绝按钮（需手动输入命令响应请求）
+disable-particles: false             # 禁用传送粒子特效
+disable-move-system: false           # 禁用移动检测（移动不会取消传送）
+disable-sound: false                 # 禁用传送音效
+disable-interdimensional-travel: false  # 禁止跨维度传送（必须同世界才能传送）
+disable-invincibility: false         # 禁用无敌时间（传送后无伤害保护）
+disable-back-on-quit: false          # 禁用退出游戏位置记录（退出时不会保存 /back 位置）
 
 # 时间单位均为秒
 # 数值设置
-invincibility-seconds: 5
-keep-alive: 60
-delay-back-command: 5
-delay-teleportation: 5
+invincibility-seconds: 5             # 无敌保护持续时间（秒）
+keep-alive: 60                       # 传送请求有效时长（秒）
+delay-back-command: 5                # /back 命令执行延迟（秒）
+delay-teleportation: 5               # 常规传送延迟时间（秒）
 
 # 冷却时间
-back-cooldown: 10
-tpa-cooldown: 10
-tpahere-cooldown: 10
-tpahereall-cooldown: 10
+back-cooldown: 10                    # /back 命令冷却时间
+tpa-cooldown: 10                     # /tpa 命令冷却时间
+tpahere-cooldown: 10                 # /tpahere 命令冷却时间
+tpahereall-cooldown: 10              # /tpahereall 全体传送冷却时间
 
 # 自定义冷却时间权限格式: 
 # simpletpa.cooldown.命令类型.秒数 
